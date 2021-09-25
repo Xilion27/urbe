@@ -1,0 +1,180 @@
+@import "variables";
+
+@for $i from 1 through 3 {
+
+    h#{$i} {
+        font-size: $altoTexto/$i;
+    } 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: $hipervinculos
+}
+
+//Clases generales
+
+.centrar {
+    align-content: center;
+}
+
+.bloque {
+    display: block;
+}
+
+
+
+.fondo {
+    background-color: #443f1c;
+    width: 100vw;
+    background: radial-gradient(#443f1c, #e7d22f )
+}
+
+
+.inline {
+    display: inline-block;
+
+}
+
+#logoHome {
+    display: inline-block;
+    width: 40px;
+    margin-right: 100 px;
+}
+
+.ancho100 {
+    width: 100%;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    padding: 2%;
+    font-size: x-small;
+    display: inline-flex;
+}
+
+.stickyDerecha{
+    position: sticky;
+    top: 0px;
+    padding: 2%;
+    font-size: x-small;
+    display: inline-flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
+
+.sticky a {
+    display: flex;
+    background-color: #d7ff44;
+    padding: 0,9vh;
+}
+
+.recuadro {
+    border-top:solid 5px red;	
+    border-right:solid 10px cyan;
+    border-bottom:solid 7px green;
+    border-left:solid 12px yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+.camel {
+    text-transform: $mayus;
+}
+
+.tituloN1 {
+    color: #f2b441;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: x-large;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 1s;
+
+}
+
+.tituloN2 {
+    color: #c4b451;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: large;
+    
+}
+
+.tituloN3 {
+    color: #c4b451;
+    text-align: center;
+    font-size: medium;
+    overflow-y: hidden; 
+}
+
+.tituloN4 {
+    color: #c4b451;
+    text-align: center;
+    text-transform: $mayus;
+    font-size: small;
+}
+
+@keyframes efecto1 {
+    0%{ width: 100%; }
+    33%{ width: 60%; }
+    66%{ width: 75%;}
+    100%{width: 100%;}
+}
+
+
+#nosotrosSection1 {
+    text-align: center;
+}
+
+#fabricaVideo {
+    width: 60vh;
+}
+
+#descripcionBirras {
+    display: inline;
+    
+}
+
+#ibuAlto {
+    color: #ff0000;
+}
+
+#ibuMedio {
+    color: #ff9844;
+}
+
+#ibuBajo {
+    color: #4fff3e;
+}
+
+#ubicacion {
+    text-align: left;
+    float: right;
+}
+//Bloque 1 - Header
+@import "header";
+//Bloque 2 - Navbar
+@import "nav";
+//Bloque 3 - Main
+@import "main";
+//Bloque 4 - Footer
+@import "footer";
+
+

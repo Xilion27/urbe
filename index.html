@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBE - Cervezas</title>
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Vínculo CSS-->
+    <link rel="stylesheet" href="css/nuevo.css">
+
+</head>
+<body class="fondo">
+  
+    <p class="sticky">
+        <img class="logoRedes" src="img/Whatsapp.png" alt="whs">
+        <a href="https://api.whatsapp.com/send?phone=22144444444">Whatsapp</a>
+    </p>
+    
+    <header>
+       <p class="tituloN1">URBE - Cerveceria</p>
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid">                
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto" style="--bs-scroll-height: 100px;">
+                  <li>
+                    <a class="navbar-brand" href="index.html"><img id="logoHome" src="img/logo-redondo.png" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Home</a>                    
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cervezas </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="pages/cervezas.html">Variedades</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/cervezas.html#stout">Stout</a></li>
+                      <li><a class="dropdown-item" href="pages/cervezas.html#ipa">IPA</a></li>                      
+                      <li><a class="dropdown-item" href="pages/cervezas.html#creamAle">Cream Ale</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="pages/servicios.html">Todos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/servicios.html#eventos">Eventos</a></li>
+                      <li><a class="dropdown-item" href="pages/servicios.html#bares">Bares</a></li>
+                      <li><a class="dropdown-item" href="pages/servicios.html#mayoristas">Mayoristas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="pages/contacto.html">Contacto</a>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Breve descripción de lo que hacemos -->
+    <main id="mainIndex">
+        <h3 id="resumen">
+            <span class="camel">
+                Ofrecemos cervezas artesanales para eventos, ventas por menor y mayor.
+                <br>¡Compra hoy tu botellon! 
+                <br>¡Sabores únicos!         
+            </span>
+        </h3>       
+    </main>
+
+    <!--Sección superior-->
+    <section class="cuerpo container row mx-auto">
+
+        <!--Nuestras birras-->
+        <div id="birrasIndex">
+            <a href="pages/cervezas.html"><img class="ancho100" src="img/cervezas.png" alt="variedades"></a>
+        </div>      
+        
+        <!--Nosotros-->
+        <div id="nosotrosIndex" class="giro">
+            <a href="pages/nosotros.html"><img class="ancho100" src="img/nosotros.png" alt="nosotros"></a>
+        </div>
+
+        <!--Servicios-->
+        <div id="serviciosIndex" class="giro">
+            <a href="pages/servicios.html"><img class="ancho100" src="img/Servicios.png" alt="servicios"></a>
+        </div>
+
+        <!--Contacto-->
+        <div id="contactoIndex">
+            <a href="pages/contacto.html"><img src="img/contacto.png" class="ancho100" alt="contacto"></a>
+        </div>
+    </section>
+
+    <!-- Pie con redes -->
+    <footer class="container mx-auto">
+      <div class="col-md-6">
+        <ul class="redes">
+          <li>
+            Email: @Urbe.com
+          </li>
+          <li>
+            <img class="logoRedes" src="img/facebook.png" alt="">
+            <a href="https://www.facebook.com/urbecerveza" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <img class="logoRedes" src="img/instagram.jpg" alt="">
+            <a href="https://www.instagram.com/urbecerveza/" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Política de Cookies
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Nuestras Cookies</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Básicas</label> 
+                    <br><input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Publicidad</label>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" value="close" onclick="window.close()">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>

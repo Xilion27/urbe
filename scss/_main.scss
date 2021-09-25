@@ -1,0 +1,62 @@
+.cuerpo {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(3);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2%;
+    grid-template-areas: 
+    'birrasIndex nosotrosIndex'
+    'birrasIndex serviciosIndex'
+    'contactoIndex contactoIndex';
+    }
+
+.ancho100 {
+    width: $ancho100;
+}
+
+
+#mainIndex {
+    grid-area: mainIndex;
+    text-align: center;
+}
+
+#birrasIndex {
+    grid-area: birrasIndex;
+    transition: all 2s;
+}
+
+#birrasIndex:hover {
+    transform: rotate(-20deg);
+}
+
+#nosotrosIndex {
+    grid-area: nosotrosIndex;
+    transition: all 2s;
+}
+
+#serviciosIndex {
+    grid-area: serviciosIndex;
+    transition: all 2s;
+}
+
+.giro:hover {
+    transform: rotate(20deg);
+}
+
+#contactoIndex {
+    grid-area: contactoIndex;
+    transition: all 2s;
+}
+
+#contactoIndex:hover {
+    transform: scale(0.9);   
+}
+
+#resumen {
+    color: #e0c82d;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: x-small;
+
+}

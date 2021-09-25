@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBE - Cervezas</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--Vínculo CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="fondo">
+
+    <p class="sticky">
+        <img class="logoRedes" src="../img/Whatsapp.png" alt="whs">
+        <a href="https://api.whatsapp.com/send?phone=22144444444">Whatsapp</a>
+    </p>
+
+    <header>
+        <p class="tituloN1">URBE - Cervecería</p>
+ 
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="container-fluid">                
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto" style="--bs-scroll-height: 100px;">
+              <li>
+                <a class="navbar-brand" href="../index.html"><img id="logoHome" src="../img/logo-redondo.png" alt="Home"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Cervezas </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="../pages/cervezas.html">Variedades</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/cervezas.html#stout">Stout</a></li>
+                  <li><a class="dropdown-item" href="../pages/cervezas.html#ipa">IPA</a></li>                      
+                  <li><a class="dropdown-item" href="../pages/cervezas.html#creamAle">Cream Ale</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="../pages/servicios.html">Todos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../pages/servicios.html#eventos">Eventos</a></li>
+                  <li><a class="dropdown-item" href="../pages/servicios.html#bares">Bares</a></li>
+                  <li><a class="dropdown-item" href="../pages/servicios.html#mayoristas">Mayoristas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/contacto.html">Contacto</a>
+              </li>                  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Sub-titulo-->
+    <section>
+        <h2 class="tituloN2">Nuestras Cervezas</h2>
+    </section>
+
+      
+    <!-- fabrica y productos -->
+    <section class="container row mx-auto">
+
+        <!--Fabricando Birras-->
+        <div class="col-md-6">
+            <video id="fabricaVideo" controls src="../videos/fabrica.mp4"></video>
+        </div>
+        
+
+        <!--Tabla de birras-->
+        <div class="col-md-6 table-responsive">
+            <table class="table table-dark table-striped align-middle">
+                        
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Características</th>                                  
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#37</td>
+                        <td>Stout</td>
+                        <td>Negra</td>
+                        <td>
+                            <ul>
+                                <li id="ibuAlto">IBU 37</li>
+                                <li>ABV% 6</li>                            
+                            </ul>
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td>#118</td>
+                        <td>IPA</td>                    
+                        <td>Rubia</td>
+                        <td>
+                            <ul>
+                                <li id="ibuMedio">IBU </li>
+                                <li>ABV% </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#14</td>
+                        <td>Cream Ale</td>                    
+                        <td>Rubia</td>
+                        <td>
+                            <ul>
+                                <li id="ibuBajo">IBU 17</li>
+                                <li>ABV% 4,5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Descripcion de las birras-->
+    <section id="descripcionBirras">
+
+        <!--Descripción Stout-->
+        <div id="stout">
+            <h3 class="tituloN3">Stout</h3>
+            <p>
+                Maceramos por dos meses nuestra Stout con chips de roble americano y whisky Jameson Black Barrel obteniendo así un cerveza con mayor cuerpo, alcohol y sabores a madera y vainilla aportados por los chips de roble y el clásico sabor del whisky Jameson.
+            </p>
+        </div>
+
+        <!--Descripción IPA-->
+        <div id="ipa">
+            <h3 class="tituloN3">IPA</h3>
+            <p>
+                India Pale Ale, es una cerveza del tipo ale, ya que es de fermentación alta, y Pale hace referencia a al tipo de malta utilizada en su elaboración. Nuestra IPA posee un gusto final medio seco. Con una sensación en boca, de cuerpo medio y sin astringencia derivada del lúpulo.
+            </p>
+        </div>
+
+        <!--Descripción Cream Ale-->
+        <div id="creamAle">
+            <h3 class="tituloN3">Cream Ale</h3>
+            <p>
+                Nuestra cream Ale es una cerveza de color pálido, orientada a la malta. Su bajo y agradable amargor y su aroma a cereal, producto de sus adjuntos de maíz, la convierten en una cerveza suave, ligera y fresca. Ideal para tomar en cualquier momento.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pie con redes -->
+    <footer class="container row mx-auto">
+        <div class="col-md-12">
+            <ul class="redes">
+                <li>
+                    Email: @Urbe.com
+                </li>
+                <li>
+                    <img class="logoRedes" src="../img/facebook.png" alt="">
+                    <a href="https://www.facebook.com/urbecerveza" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <img class="logoRedes" src="../img/instagram.jpg" alt="">
+                    <a href="https://www.instagram.com/urbecerveza/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>        
+    </footer>
+
+    <!--Bootstrap Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
